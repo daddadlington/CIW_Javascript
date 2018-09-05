@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 5-4</title>
+
+<script type="text/javascript">
+<!--
+
+/*************************************************************
+  Add a one line if statement. Check myValue for a null value.
+  Invoke a break statement if myValue is null.
+  ***********************************************************/
+  
+  function breakTest() {
+    var loopBoolean = true;
+    var myValue = "";
+    while (loopBoolean) {
+	
+      myValue = prompt ("Enter data", myValue);
+	  
+        if (myValue == null) break;
+		
+          if (myValue) {
+            loopBoolean = false;
+            alert ("Thank you, " + myValue + ".")
+          }
+    }
+  }
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<form name="myform">
+<input type="button" value="Break Test" onclick="breakTest();" />
+</form>
+
+</body>
+</html>

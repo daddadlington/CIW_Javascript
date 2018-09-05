@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 6-1</title>
+
+<script type="text/Javascript">
+<!--
+
+/**********************************************
+  The newWindow() function opens a new window 
+  using http://www.ciwcertified.com as the URL.
+**********************************************/
+  
+function newWindow() {
+  var option = 'menubar=1,status=0,titlebar=0,toolbar=yes,scrollbars=yes,resizable=yes,height=300,width=400';
+  var url = 'https://www.w3schools.com';
+  window.open(url, "", option);
+}
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+
+<form name="myForm">
+<input type="button" value="Open New Window" onClick="newWindow();" />
+</form>
+
+</body>
+</html>
