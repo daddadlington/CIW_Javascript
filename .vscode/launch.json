@@ -9,14 +9,14 @@
             "type": "chrome",
             "request": "launch",
             "name": "Chrome",
-            "url": "http://localhost:8081/Student_Files/Lesson 6/Lab6-4/Lab6-4_Paul2.htm",
+            "url": "http://localhost:8081/Student_Files/Lesson 6/Lab6-5/Lab6-5_Paul.htm",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "firefox",
             "request": "launch",
             "name": "Firefox",
-            "url": "http://localhost:8081/Student_Files/Lesson 6/Lab6-4/Lab6-4_Paul2.htm",
+            "url": "http://localhost:8081/Student_Files/Lesson 6/Lab6-5/Lab6-5_Paul.htm",
             "webRoot": "${workspaceFolder}"
         },
         {

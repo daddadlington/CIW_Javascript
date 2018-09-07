@@ -10,24 +10,27 @@
     var textColor, backColor, pageTitle;
     var yourText, pageContent, docWindow;
     
-    textColor = prompt("Please enter a text color:","white");
-    backColor = prompt("Please enter a background color:","black");
-    pageTitle = prompt("The page will be titled: ","Default Title");
-    yourText = prompt("Add content to the new document:", "page content");
+    //textColor = prompt("Please enter a text color:","green");
+    textColor = "green";
+    //backColor = prompt("Please enter a background color:","yellow");
+    backColor = "white";
+    //pageTitle = prompt("The page will be titled: ","Pauls window");
+    pageTitle = "Pauls Window";
+    // yourText = prompt("Add content to the new document:", "The moon is dark tonight");
+    yourText = "The moon is dark tonight";
 
     pageContent = "<html><head><title>";
     pageContent += pageTitle + "</title>";
     pageContent += "<script>alert('The page ' + document.title + ' was created: ' + document.lastModified)</script>";
     pageContent += "</head><body><strong>";
-    pageContent += "</strong></body></html>";
-
-    docWindow = open("","docWin","width=250,height=150,resizable=1,status=1");
+    pageContent += yourText + "</strong></body></html>";
+    docWindow = window.open("","docWin","width=600,height=150,resizable=1,status=1");
     // Write your code here
     var q = docWindow.document;
-	q.open();
+	  q.open();
+    q.write(pageContent);
     q.body.style.backgroundColor = backColor;
     q.body.style.color = textColor;
-    q.write(pageContent);
     q.close();
   }
   
